@@ -15,6 +15,7 @@ import { Provider } from "react-redux";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import reportWebVitals from './reportWebVitals';
 import { render } from "react-dom";
+import DemoPage from './Components/Demo/DemoPage';
 
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
@@ -25,7 +26,8 @@ render(
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-           <Route path="/" element={<App/>}/>                         
+           <Route path="/" element={<App/>}/>
+           <Route path="/demo" element={<DemoPage/>}/>                         
         </Routes>
       </BrowserRouter>
       </QueryClientProvider>
