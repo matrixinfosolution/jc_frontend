@@ -1,5 +1,7 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -74,4 +76,36 @@
     width: 90%;
     visibility: visible;
   }
+}
+/* img slider */
+.carousel img {
+  height: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel img {
+    height: 500px;
+  }
+}
+/* footer */
+.footer-bg {
+  padding: 20px 20px;
+  background-color: #000;
+  height: 45vh;
+}
+.textWhite {
+  color: white;
+}
+.custom-hr {
+  background-color: white;
+  height: 2px;
+  border: none;
+  /* margin: 20px 0; */
 }
