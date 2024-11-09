@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import {
   BrowserRouter,
   Routes,
@@ -8,28 +8,30 @@ import {
   unstable_HistoryRouter as Router,
 } from "react-router-dom";
 import store from "../src/API/Store/store";
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import App from "./App";
 import { Provider } from "react-redux";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
 import { render } from "react-dom";
-import DemoPage from './Components/Demo/DemoPage';
-
+import DemoPage from "./Components/Demo/DemoPage";
+import { Home } from "./Components/pages/ImportPages";
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
 
 render(
   <React.StrictMode>
     <Provider store={store}>
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Routes>
-           <Route path="/" element={<App/>}/>
-           <Route path="/demo" element={<DemoPage/>}/>                         
-        </Routes>
-      </BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<App />}>
+              <Route index element={<Home />} />
+              <Route path="/demo" element={<DemoPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </QueryClientProvider>
     </Provider>
   </React.StrictMode>,
