@@ -6,9 +6,15 @@ import AppNavbar from "../pages/AppNavbar";
 function RootLayout() {
   return (
     <>
-      <AppNavbar />
-      <Outlet />
-      <Footer />
+      <header>
+        <AppNavbar />
+      </header>
+      <main style={{ marginTop: "60px" }}>
+        <Outlet />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

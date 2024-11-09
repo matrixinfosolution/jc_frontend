@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Navbar, Offcanvas, Nav, Container, Button } from "react-bootstrap";
-// import { FaUser } from "react-icons/fa"; // Import user icon from react-icons if needed
+import { Navbar, Offcanvas, Nav, Container } from "react-bootstrap";
 
 function AppNavbar() {
   const [activeLink, setActiveLink] = useState("Home");
@@ -11,7 +10,7 @@ function AppNavbar() {
 
   return (
     <>
-      <Navbar bg="light" expand="lg" fixed="top">
+      <Navbar bg="light" expand="lg">
         <Container fluid>
           <Navbar.Brand href="#" className="me-auto">
             Trevox
