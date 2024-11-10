@@ -7,7 +7,7 @@ import img3 from "../../Assets/BANNER 3.jpg";
 function Home() {
   return (
     <div>
-      <Carousel style={{ background: "black" }}>
+      <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100 carousel-img"
