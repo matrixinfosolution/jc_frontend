@@ -1,21 +1,21 @@
 import React from "react";
-import "../../Rootlayout.css";
+import { AdminNavbar, AdminFooter } from "../pages/ImportPages";
 import { Outlet } from "react-router-dom";
-import { Footer, AppNavbar } from "../pages/ImportPages";
-function RootLayout() {
+
+function AppAdminLayout() {
   return (
     <>
       <header>
-        <AppNavbar />
+        <AdminNavbar />
       </header>
       <main>
         <Outlet />
       </main>
       <footer>
-        <Footer />
+        <AdminFooter />
       </footer>
     </>
   );
 }
 
-export default RootLayout;
+export default AppAdminLayout;

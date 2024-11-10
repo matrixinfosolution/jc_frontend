@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Offcanvas, Nav, Container } from "react-bootstrap";
+import { FaRegUser } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa";
 
 function AppNavbar() {
   const [activeLink, setActiveLink] = useState("Home");
@@ -10,7 +12,7 @@ function AppNavbar() {
 
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" className="app-navbar">
         <Container fluid>
           <Navbar.Brand href="#" className="me-auto">
             Trevox
@@ -60,14 +62,10 @@ function AppNavbar() {
           </Navbar.Offcanvas>
 
           {/* User Icon - Always Visible */}
-          <Nav>
-            <Nav.Link href="#" className="ms-3">
-              lg
-            </Nav.Link>
-            <Nav.Link href="#" className="ms-3">
-              WL
-            </Nav.Link>
-          </Nav>
+
+          <FaRegUser />
+          <FaRegHeart className="ms-3" />
+
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
         </Container>
       </Navbar>

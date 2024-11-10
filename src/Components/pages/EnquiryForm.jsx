@@ -9,7 +9,7 @@ function EnquiryForm() {
           <FormControl
             type="text"
             placeholder="Name"
-            className="bg-transparent "
+            className="bg-transparent"
           />
         </Col>
         <Col>
