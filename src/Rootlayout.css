@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css for navbar */
+.app-navbar .navbar {
+  padding: 20px 10px;
+}
+.app-navbar .navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+.app-navbar .navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+.app-navbar .nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+.app-navbar .nav-link:hover,
+.nav-link.active {
+  color: #000;
+}
+@media (min-width: 991px) {
+  .app-navbar .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  .app-navbar .nav-link:hover:before,
+  .app-navbar .nav-link.active::before {
+    width: 90%;
+    visibility: visible;
+  }
+}
+/* img slider */
+.carousel img {
+  height: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel img {
+    height: 500px;
+  }
+}
+/* footer */
+.footer-bg {
+  padding: 20px 20px;
+  background-color: #000;
+  height: 45vh;
+}
+.textWhite {
+  color: white;
+}
+.custom-hr {
+  background-color: white;
+  height: 2px;
+  border: none;
+  /* margin: 20px 0; */
+}
+.bg-transparent::placeholder {
+  color: white;
+}

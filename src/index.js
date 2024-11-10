@@ -1,12 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
-  unstable_HistoryRouter as Router,
-} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import store from "../src/API/Store/store";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,8 +9,6 @@ import { Provider } from "react-redux";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import reportWebVitals from "./reportWebVitals";
 import { render } from "react-dom";
-import DemoPage from "./Components/Demo/DemoPage";
-import { Home } from "./Components/pages/ImportPages";
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
 
@@ -25,12 +17,7 @@ render(
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<App />}>
-              <Route index element={<Home />} />
-              <Route path="/demo" element={<DemoPage />} />
-            </Route>
-          </Routes>
+          <App />
         </BrowserRouter>
       </QueryClientProvider>
     </Provider>
