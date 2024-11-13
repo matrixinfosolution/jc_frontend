@@ -1,5 +1,5 @@
 import React from "react";
-import { AdminNavbar, AdminFooter } from "../pages/ImportPages";
+import { AdminNavbar } from "../pages/ImportPages";
 import { Outlet } from "react-router-dom";
 
 function AppAdminLayout() {
@@ -11,9 +11,7 @@ function AppAdminLayout() {
       <main>
         <Outlet />
       </main>
-      <footer>
-        <AdminFooter />
-      </footer>
+      <footer>{/* <AdminFooter /> */}</footer>
     </>
   );
 }

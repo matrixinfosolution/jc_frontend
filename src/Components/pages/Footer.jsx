@@ -16,20 +16,20 @@ function Footer() {
         </Col>
         <Col style={{ color: "white" }}>
           <h2 style={{ textAlign: "center" }}>Shop</h2>
-          <ul>
-            <li>Screen Printing</li>
-            <li>DTG</li>
-            <li>Heat press printing</li>
-            <li>DYE Sublimation</li>
+          <ul className="footer-list">
+            <li className="footer-list-li">Screen Printing</li>
+            <li className="footer-list-li">DTG</li>
+            <li className="footer-list-li">Heat press printing</li>
+            <li className="footer-list-li">DYE Sublimation</li>
           </ul>
         </Col>
         <Col style={{ color: "white" }}>
           <h2 style={{ textAlign: "center" }}>Links</h2>
-          <ul>
-            <li>About us</li>
-            <li>Contact us</li>
-            <li>Terms & Conditions</li>
-            <li>Privacy & Policy</li>
+          <ul className="footer-list">
+            <li className="footer-list-li">About us</li>
+            <li className="footer-list-li">Contact us</li>
+            <li className="footer-list-li">Terms & Conditions</li>
+            <li className="footer-list-li">Privacy & Policy</li>
           </ul>
         </Col>
         <Col style={{ color: "white" }}>

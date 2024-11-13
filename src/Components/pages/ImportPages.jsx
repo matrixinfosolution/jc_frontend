@@ -5,4 +5,5 @@ import AdminNavbar from "./AdminNavbar";
 import Footer from "./Footer";
 import AppNavbar from "./AppNavbar";
 import AdminFooter from "./AdminFooter";
-export { Home, Navbar, AdminNavbar, Footer, AppNavbar, AdminFooter };
+import MainTabs from "./MainTabs";
+export { Home, Navbar, AdminNavbar, Footer, AppNavbar, AdminFooter, MainTabs };

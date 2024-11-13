@@ -3,9 +3,21 @@
   padding: 0;
 }
 .navbar {
-  padding: 10px;
+  padding: 4px;
 }
 
 .admin-layout .navbar-toggler {
   display: inline-block;
+  border: none;
+}
+.nav-link {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+.nav-link:hover {
+  color: white;
+}
+.card {
+  border-radius: 0%;
 }
