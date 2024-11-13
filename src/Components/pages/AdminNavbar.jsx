@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Navbar, Offcanvas } from "react-bootstrap";
 import "../../AdminLayout.css";
-import { FaRegUser } from "react-icons/fa6";
+import { FaCircleUser } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 function AdminNavbar() {
   return (
@@ -25,7 +25,7 @@ function AdminNavbar() {
               <NavLink>Home</NavLink>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
-          <FaRegUser />
+          <FaCircleUser />
         </Container>
       </Navbar>
     </>
